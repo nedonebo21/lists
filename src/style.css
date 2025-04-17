@@ -13,6 +13,8 @@ body {
 }
 ul{
   list-style-image: linear-gradient(130deg, blue, blueviolet);
+  list-style-position: outside;
+  width: 400px;
 }
 li::marker {
   color: orange;
