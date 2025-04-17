@@ -9,7 +9,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /*color: red;*/
 }
 ul{
-  list-style-image: url(javascript.svg);
+  /*list-style-image: url(javascript.svg);*/
+}
+li::marker {
+  color: orange;
 }
