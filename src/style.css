@@ -17,6 +17,14 @@ ul{
   list-style-position: outside;
   width: 400px;
 }
-li::marker {
+ol li::marker {
   color: orange;
+  content: counter(example);
+}
+
+ol{
+  counter-reset: example 1;
+}
+li{
+  counter-increment: example 4;
 }
