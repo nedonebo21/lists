@@ -12,7 +12,7 @@ body {
   /*color: red;*/
 }
 ul{
-  /*list-style-image: url(javascript.svg);*/
+  list-style-image: linear-gradient(130deg, blue, blueviolet);
 }
 li::marker {
   color: orange;
