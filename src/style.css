@@ -17,14 +17,33 @@ ul{
   list-style-position: outside;
   width: 400px;
 }
-ol li::marker {
-  color: orange;
-  content: counter(example);
-}
+/*ol li::marker {*/
+/*  color: blueviolet;*/
+/*  content: counter(example);*/
+/*}*/
 
 ol{
-  counter-reset: example 1;
+  counter-reset: example 0;
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
 li{
-  counter-increment: example 4;
+  counter-increment: example 1;
+  width: 350px;
+  background-color: burlywood;
+  color: black;
+  padding: 20px;
+  position: relative;
+}
+li::after{
+  content: counter(example);
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 6rem;
+  position: absolute;
+  right: 10px;
+  top: -22px;
+}
+p{
+  font-size: 16px;
 }
